@@ -60,9 +60,9 @@ export class DocumentUploadComponent implements OnDestroy {
         if (fileList && fileList.length === 1) {
             const file: File = fileList[0];
             const fileSize = file.size / (1024 * 1024);
-            if (fileSize > 20) {
+            if (fileSize > 30) {
                 alert(
-                    'Dokumenti është tepër i madh. Zgjidhni një dokument më të vogel se 20 MB.'
+                    'Dokumenti është tepër i madh. Zgjidhni një dokument më të vogel se 30 MB.'
                 );
                 return;
             }
